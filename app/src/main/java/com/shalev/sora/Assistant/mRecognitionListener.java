@@ -12,7 +12,6 @@ import java.util.ArrayList;
 
 /**
  * Created by magshimim on 9/13/2017.
- * blah
  */
 
 public class mRecognitionListener implements RecognitionListener{
