@@ -1,0 +1,82 @@
+{
+  "Sunday": [
+    {
+      "lesson": "",
+      "time": "",
+      "homework": "",
+      "number": "1"
+    },
+    {
+      "lesson": "",
+      "time": "",
+      "homework": "",
+      "number": "2"
+    },
+    {
+      "lesson": "Break",
+      "time": "9:20",
+      "homework": "",
+      "number": "-"
+    },
+    {
+      "lesson": "History",
+      "time": "9:55",
+      "homework": "Read page 12",
+      "number": "3"
+    },
+    {
+      "lesson": "Homeroom",
+      "time": "10:40",
+      "homework": "",
+      "number": "4"
+    },
+    {
+      "lesson": "Break",
+      "time": "11:25",
+      "homework": "Eat",
+      "number": "-"
+    },
+    {
+      "lesson": "Math",
+      "time": "11:40",
+      "homework": "Practice trigo",
+      "number": "5"
+    },
+    {
+      "lesson": "Math",
+      "time": "12:20",
+      "homework": "Practice trigo",
+      "number": "6"
+    },
+    {
+      "lesson": "Break",
+      "time": "11:40",
+      "homework": "Eat",
+      "number": "-"
+    },
+    {
+      "lesson": "Bible",
+      "time": "13:10",
+      "homework": "Read chapter",
+      "number": "7"
+    },
+    {
+      "lesson": "Break",
+      "time": "13:50",
+      "homework": "",
+      "number": "-"
+    },
+    {
+      "lesson": "Bible",
+      "time": "14:15",
+      "homework": "Read chapter",
+      "number": "8"
+    },
+    {
+      "lesson": "Literature",
+      "time": "14:55",
+      "homework": "",
+      "number": "9"
+    }
+  ]
+}
