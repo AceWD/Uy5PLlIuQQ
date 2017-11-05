@@ -99,7 +99,7 @@ public class tueFragment extends Fragment {
                 System.out.println("LongPress " + isPress);
                 if(isNetworkAvailable())
                 {
-                    createDialog("Tuesday", Integer.toString(position), infoList.get(position).lesson, infoList.get(position).number, infoList.get(position).homework, true);
+                    createDialog("Tuesday", Integer.toString(position), infoList.get(position).lesson, infoList.get(position).number, infoList.get(position).homework, infoList.get(position).time,true);
                 }
                 else
                 {
@@ -203,7 +203,7 @@ public class tueFragment extends Fragment {
         });
     }
 
-    public void createDialog(final String day, final String lessonNum , final String lesson, String number, String homework, final boolean isLongPress)
+    public void createDialog(final String day, final String lessonNum , final String lesson, String number, String homework, String time,final boolean isLongPress)
     {
         final AlertDialog.Builder mBuilder = new AlertDialog.Builder(getContext()); //Possibly wont work
         View mView = getActivity().getLayoutInflater().inflate(R.layout.lesson_change_dialog, null);
@@ -232,6 +232,7 @@ public class tueFragment extends Fragment {
         mLesson.setText(lesson);
         mNumber.setText(number);
         mHomework.setText(homework);
+        mTime.setText(time);
 
         mBuilder.setView(mView);
         final AlertDialog dialog = mBuilder.create();
@@ -319,7 +320,7 @@ public class tueFragment extends Fragment {
         {
             if(isNetworkAvailable())
             {
-                createDialog("Tuesday", Integer.toString(count++),"","","", false);
+                createDialog("Tuesday", Integer.toString(count++),"","","", "",false);
                 return true;
             }
             else

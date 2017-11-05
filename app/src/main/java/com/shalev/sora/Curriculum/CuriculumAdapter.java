@@ -1,6 +1,8 @@
 package com.shalev.sora.Curriculum;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.support.constraint.ConstraintLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -64,6 +66,8 @@ public class CuriculumAdapter extends BaseAdapter{
 
         TextView numberTextView = (TextView)convertView.findViewById(R.id.numberText);
 
+        ConstraintLayout constraint = (ConstraintLayout)convertView.findViewById(R.id.list_item_layout);
+
         Lesson lesson = (Lesson)getItem(position);
         //System.out.println("Blah " + lesson.lesson);
         lessonTextView.setText(lesson.lesson);
@@ -82,7 +86,7 @@ public class CuriculumAdapter extends BaseAdapter{
         //IF the row is not null and it equals to "" that means its a break
         if(lesson.number != null && lesson.lesson.equals("Break"))
         {
-
+            constraint.setBackgroundColor(Color.rgb(66, 134, 244));
             //Puts the break in the middle if there are not homework in there
             if(lesson.homework.equals(""))
             {
@@ -96,6 +100,12 @@ public class CuriculumAdapter extends BaseAdapter{
                 }
 
         }
+
+        else if(!lesson.lesson.equals("break"))
+        {
+            constraint.setBackgroundColor(Color.TRANSPARENT);
+        }
+
         //Making sure that stuff that are not break will not get padding
         else
             {
